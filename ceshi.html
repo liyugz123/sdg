@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>优质教育与资源可视化展示</title>
+  <style>
+    /* 全局样式 */
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    h1, h2, h3 {
+      margin: 0 0 10px;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    /* 一级分类标题 */
+    .category-header {
+      background-color: #005aab;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 30px;
+    }
+    /* 二级分类折叠区域 */
+    details {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 15px 0;
+      padding: 10px 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    details summary {
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+    details[open] summary {
+      color: #005aab;
+    }
+    /* 卡片式展示 */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    .card {
+      background-color: #fafafa;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 15px;
+      margin: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+    .card-title {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #005aab;
+    }
+    .card-detail {
+      font-size: 0.95em;
+      line-height: 1.4;
+      color: #555;
+    }
+    /* 链接样式 */
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* 媒体查询：响应式布局 */
+    @media (max-width: 600px) {
+      .card-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>优质教育与资源可视化展示</h1>
+
+    <!-- 一级分类：问题 -->
+    <section>
+      <div class="category-header">
+        <h2>问题</h2>
+      </div>
+      <!-- 二级分类：产品 -->
+      <details open>
+        <summary>产品</summary>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-title">如何利用AI技术把优质教育带给农村？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">父母为你支付了高额学费，让你进入一土学校学习</div>
+            <div class="card-detail">那么，一土学校提供的哪些教育内容是可以共享、传播或惠及那些支付不起一土学费的孩子的呢？</div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 二级分类：探究 -->
+      <details>
+        <summary>探究</summary>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-title">读书真的可以改变命运吗？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">如果我的家庭条件无法支持我读一土，我会在哪里上学？</div>
+            <div class="card-detail">会过怎样的生活？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">爸妈的教育经历是怎样的？</div>
+            <div class="card-detail">为什么你为我选择一土？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">互联网在线平台如何打破地理和经济边界？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">作为六年级的学生，我可以为乡村的教育做些什么？</div>
+            <div class="card-detail">来支持我的同龄人</div>
+          </div>
+          <div class="card">
+            <div class="card-title">山区、乡村缺乏教师该怎么破除这种局面？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">乡村学校的贫困和资源短缺</div>
+            <div class="card-detail">如果国家都解决不了，我们小学生能做什么？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">谁在分配教育资源？</div>
+            <div class="card-detail">通过什么方式分配？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">为什么你会选择“优质教育”这一话题？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">教育重要吗？</div>
+            <div class="card-detail">为什么有的国家不重视教育？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">广州是否实现了包容和公平的教育？</div>
+            <div class="card-detail">没有户籍的打工人的子女去了哪里？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">受教育水平低的老年人如何获得更多的教育机会？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">如何帮助盲人/脑瘫人群获得优质的教育机会？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">优质教育的标准是什么？</div>
+            <div class="card-detail">我们接受的是优质教育吗？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">广州市有足够的职业技术人员吗？</div>
+            <div class="card-detail">为什么每人愿意学职业技术？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">在小学阶段，男女生在心智发展上存在差异</div>
+            <div class="card-detail">我们的教育方式能公平对待这种差异吗？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">人工智能在教育领域的应用</div>
+            <div class="card-detail">是促进教育公平还是加剧教育差距？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">在实现优质教育过程中</div>
+            <div class="card-detail">政府、学校、家庭可以承担哪些责任？</div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 二级分类：探究+产品 -->
+      <details>
+        <summary>探究+产品</summary>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-title">广东目前有哪些教育不平等现象？</div>
+            <div class="card-detail">有办法改善吗？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">存在注意力缺陷的儿童如何获得优质公平的教育？</div>
+          </div>
+          <div class="card">
+            <div class="card-title">互联网和在线学习平台如何帮助弥合优质教育资源分配不均的问题？</div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- 一级分类：资源 -->
+    <section>
+      <div class="category-header">
+        <h2>资源</h2>
+      </div>
+      <!-- 二级分类：公益项目 -->
+      <details>
+        <summary>公益项目</summary>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-title">索尼梦想教室</div>
+            <div class="card-detail">2013年创立的公益项目，旨在通过先进的电子教学设备和多样化的课程，为偏远地区的孩子们提供更优质的学习资源</div>
+          </div>
+          <div class="card">
+            <div class="card-title">微澜图书馆</div>
+            <div class="card-detail">帮助流动儿童，满天星班有过联系</div>
+          </div>
+          <div class="card">
+            <div class="card-title">越秀区青草公益</div>
+            <div class="card-detail">旨在支持流动青少年成长的机构，流动青少年指外来务工人员子女</div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 二级分类：机构 -->
+      <details>
+        <summary>机构</summary>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-title">EV青年公益机构</div>
+            <div class="card-detail">寒暑假有支持乡村教育</div>
+          </div>
+          <div class="card">
+            <div class="card-title">美丽中国</div>
+            <div class="card-detail">我们学校很多老师有美丽中国的经验</div>
+          </div>
+          <div class="card">
+            <div class="card-title">造梦公益</div>
+            <div class="card-detail">孟翰在肯尼亚创建的公益组织，旨在提高当地贫民窟的儿童生活和学习条件</div>
+          </div>
+          <div class="card">
+            <div class="card-title">公文式教育中心</div>
+            <div class="card-detail">通过精心设计的学习单，以自习形式降低成本</div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 二级分类：视频 -->
+      <details>
+        <summary>视频</summary>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-title">李旸: 榕树根的孩子们</div>
+            <div class="card-detail">
+              一席演讲<br>
+              <a href="https://www.bilibili.com/video/BV1RW411M71S/?share_source=copy_web&vd_source=571c5c2c33694f9e09bfb00a93130e71" target="_blank">点击观看</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">“面对面”节目对张桂梅的专访</div>
+            <div class="card-detail">
+              <a href="https://www.bilibili.com/video/BV1Ng4y1v7gt/?share_source=copy_web&vd_source=571c5c2c33694f9e09bfb00a93130e71" target="_blank">点击观看</a>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 二级分类：网络教学资源 -->
+      <details>
+        <summary>网络教学资源</summary>
+        <div class="card-container">
+          <div class="card"><div class="card-title">可汗学院</div></div>
+          <div class="card"><div class="card-title">国家中小学智慧教育平台</div></div>
+          <div class="card"><div class="card-title">B站</div></div>
+          <div class="card"><div class="card-title">学习强国App</div></div>
+          <div class="card"><div class="card-title">Coursera</div></div>
+          <div class="card"><div class="card-title">edx</div></div>
+          <div class="card"><div class="card-title">Google Education</div></div>
+          <div class="card"><div class="card-title">Skype in the Classroom</div></div>
+          <div class="card"><div class="card-title">Duolingo</div></div>
+        </div>
+      </details>
+
+      <!-- 二级分类：文本 -->
+      <details>
+        <summary>文本</summary>
+        <div class="card-container">
+          <div class="card"><div class="card-title">《他乡的童年》</div></div>
+          <div class="card"><div class="card-title">《优秀的绵羊》</div></div>
+          <div class="card"><div class="card-title">《精英的傲慢》</div></div>
+          <div class="card"><div class="card-title">《世上为什么要有图书馆》</div></div>
+        </div>
+      </details>
+
+      <!-- 二级分类：专家 -->
+      <details>
+        <summary>专家</summary>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-title">臧老师</div>
+            <div class="card-detail">病房语文课</div>
+          </div>
+          <div class="card">
+            <div class="card-title">联合国教科文组织&amp;难民署工作人员</div>
+          </div>
+        </div>
+      </details>
+    </section>
+  </div>
+</body>
+</html>
